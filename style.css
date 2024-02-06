@@ -221,6 +221,8 @@ body {
 }
 .add_carnum .car-image
 {
+    width: 98%;
+    height: 100%;
     filter: brightness(110%) contrast(90%) saturate(120%) sepia(10%);
     background-color: #a37511ec;
 }
