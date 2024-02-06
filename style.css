@@ -306,6 +306,10 @@ body {
     color: #192540;
 }
 
+#features
+{
+    margin-block: 40px;
+}
 
 #features .feature p {
     margin: 4px 0;
