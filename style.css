@@ -1,0 +1,160 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(239, 233, 221, 1);
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: expofont;
+    src: url('./ExpoArabic-Book.ttf');
+  }
+
+.container
+{
+    display: block;
+    margin-top: 20px;
+}
+.card
+{
+    margin: 15px 0 20px;
+    width: 380px;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 80px;
+    margin-inline: auto;
+    padding-block: 8px;
+    padding-bottom: 180px;
+    border-radius: 23px;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.card .car-details
+{
+    width: 94%;
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    text-align: end;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    font-family: expofont;
+    font-size: 16px;
+}
+
+.card .car-details .details
+{
+    width: 40%;
+    font-weight: 900;
+}
+.card .car-details .price
+{
+    width: 40%;
+    font-family: expofont;
+    font-weight: 800;
+}
+
+.card .car-details .price .currency
+{
+    margin: 0;
+    font-weight: 900;
+    font-size: 22px;
+}
+
+.card .car-details .star
+{
+    position: relative;
+    width: 5%;
+}
+
+.card .car-details .star img
+{
+    position: relative;
+    top:15px;
+}
+
+.contact,
+#numbers
+ {
+    width: 90%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.contact .call-us,
+.contact .chat-with-us
+{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+    height: 38px;
+    border-radius: 4px;
+    background: rgba(25, 37, 64, 1);
+    color: white;
+    font-family: expofont;
+    font-weight: 500;
+}
+
+.contact .call-us::before,
+.contact .chat-with-us::before
+{
+    position: relative;
+    right: 8px;
+    top:2.2px
+}
+
+.contact .call-us::before
+{
+    content: url('./images/Vector.png');
+}
+.contact .chat-with-us::before
+{
+    content: url('./images/Vector-1.png');
+}
+
+#numbers {
+    margin-block: 20px;
+}
+#numbers #car-numbers,
+#numbers #bike-numbers 
+{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+    height: 38px;
+    border-radius: 4px;
+    background: #192540;
+    color: #EBAF29;
+    font-family: expofont;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+#numbers #car-numbers::before,
+#numbers #bike-numbers::before
+{
+    position: relative;
+    right: 8px;
+    top:1px
+}
+
+#numbers #car-numbers::before
+{
+    content: url('./images/Vector.svg');
+    width: 20px;
+    height: 17px;
+}
+
+#numbers #bike-numbers::before
+{
+    content: url('./images/pepicons-pencil_motorcycle.svg');
+    width: 20px;
+    aspect-ratio: 1/1;
+}

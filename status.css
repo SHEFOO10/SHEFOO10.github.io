@@ -1,0 +1,42 @@
+.exclusive-price::after
+{
+    position: absolute;
+    content: 'سعر مميز';
+    background: rgba(66, 255, 0, 1);
+    font-family: expofont;
+    font-weight: 600;
+    font-size: 12px;
+    text-align: center;
+    left: 7.5px;
+    top: 60px;
+    padding: 8px 12px;
+    width: max-content;
+}
+.free-transfer-fees::after
+{
+    position: absolute;
+    content: 'رسوم تحويل مجانية';
+    background: rgba(235, 175, 41, 1);
+    font-family: expofont;
+    font-weight: 600;
+    font-size: 12px;
+    text-align: center;
+    left: 7.5px;
+    top: 80px;
+    padding: 6px;
+    width: max-content;
+}
+.new::before
+{
+    position: absolute;
+    background: rgba(235, 175, 41, 1);
+    font-family: expofont;
+    font-weight: 600;
+    font-size: 12px;
+    text-align: center;
+    left: 7.5px;
+    top: 28px;
+    padding-block: 6px;
+    width: 60px;
+    content: 'جديد';
+}
