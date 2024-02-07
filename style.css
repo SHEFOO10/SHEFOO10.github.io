@@ -9,7 +9,10 @@ body {
     font-family: BebasKai;
     src: url('./BebasKai.ttf');
 }
-
+@font-face {
+    font-family: Montserrat;
+    src: url('./Montserrat-VariableFont_wght.ttf');
+}
 @font-face {
     font-family: expofont;
     src: url('./ExpoArabic-Book.ttf');
@@ -385,6 +388,13 @@ body {
   flex-wrap: wrap;
     gap: 10px;
 }
+.fillter .content .parts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
 .fillter .content .part ,.fillter .content .form-control {
 
     display: flex;
@@ -408,8 +418,10 @@ outline: none;
 padding: 4px 8px;
 }
 .fillter .content .part input::placeholder{
-    color: white;
+    color: #19254072;
     font-family: expofont;
+    font-weight: 200;
+    font-size: 14px;
 }
 .fillter select{
     font-size: 14px;
@@ -502,7 +514,13 @@ padding: 4px 8px;
     color: #e0aa0a;
     background-color: #1b2541;
 }
-.fillter .btnSearch{}
+.fillter .btnSearch {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
 .fillter .btnSearch input {
     background: #1b2541;
     color: #e6ae08;
