@@ -6,8 +6,8 @@ body {
     scroll-behavior: smooth;
 }
 @font-face {
-    font-family: Montserrat;
-    src: url('./Montserrat-VariableFont_wght.ttf');
+    font-family: BebasKai;
+    src: url('./BebasKai.ttf');
 }
 
 @font-face {
@@ -80,7 +80,7 @@ body {
 .number-plate .code,
 .number-plate .num
 {
-    font-family: Montserrat;
+    font-family: BebasKai;
     font-optical-sizing: auto;
     font-weight: 700    ;
     font-style: normal;
@@ -216,7 +216,9 @@ body {
     font-size: 40px;
     letter-spacing: 5px;
 }
-
+.car-number {
+    position: relative;
+}
 .add_carnum {
     position: relative;
     width: max-content;
@@ -621,8 +623,13 @@ min-width: 108px;
     box-shadow: none;
     width: 18px;
     height: 18px;
-    background: transparent;
+    background-color: #eee9dc;
+    border-radius: 4px;
     border: 2px solid;
+}
+.contactUs .form-check-input:checked[type=checkbox]{
+    background-image: url('./images/true.svg');
+    background-size: 66%;
 }
 .contactUs .selectTypeContact .part1 .custom-checkbox{
     display: flex;
@@ -630,6 +637,36 @@ min-width: 108px;
     gap: 6px;
     flex-direction: row-reverse;
 }
+.contactUs .checkAgree{
+    padding-right: 0;
+}
+.contactUs .checkAgree input{
+    width: 18px;
+    height: 18px;
+    float: left;
+    background-color: #eee9dc;
+   
+    border: 2px solid;
+    box-shadow: none;
+}
+.contactUs .btnSend{
+    background: rgba(25, 37, 64, 1);
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 10px;
+padding: 16px;
+border-radius: 4px;
+margin-top: 24px;
+margin-bottom: 100px;
+}
+.contactUs .btnSend p{
+    font-size: 20px;
+    font-family: expofontBold;
+margin: 0;
+color: white;
+}
+.contactUs .btnSend img{}
   /*nextContent*/
   .nextContent{
     direction: rtl;
