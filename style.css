@@ -192,13 +192,15 @@ body {
     aspect-ratio: 1/1;
 }
 
-.number-plate
-{
+.number-plate {
     position: absolute;
-    right: 12.5%;
-    top: 35%;
+    left: 50%;
+    bottom: 10%;
+    display: flex;
+    align-items: center;
+    transform: translateX(-50%);
+    gap: 10px;
 }
-
 .number-plate .code
 {
     position: absolute;
@@ -605,6 +607,28 @@ min-width: 108px;
   }
   .contactUs form input[type="tel"] {
     padding: 8px 16px;
+}
+.contactUs .selectTypeContact{}
+.contactUs .selectTypeContact label{
+    margin-left: 10px;
+}
+.contactUs .selectTypeContact .part1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contactUs .selectTypeContact .part1 input {
+    box-shadow: none;
+    width: 18px;
+    height: 18px;
+    background: transparent;
+    border: 2px solid;
+}
+.contactUs .selectTypeContact .part1 .custom-checkbox{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-direction: row-reverse;
 }
   /*nextContent*/
   .nextContent{
