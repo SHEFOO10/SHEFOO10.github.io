@@ -52,6 +52,8 @@ body {
     flex-wrap: wrap;
     font-family: expofont;
     font-size: 16px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .card .car-details .details
@@ -390,7 +392,8 @@ body {
     justify-content: center;
     background: #EBAF29;
     border-radius: 4px;
-    max-width: 88px;
+    max-width: 130px;
+width: 130px;
 }
 .fillter .content .part input{
     background-color: #EBAF29;
@@ -403,6 +406,10 @@ body {
     border-radius: 4px;
 outline: none;
 padding: 4px 8px;
+}
+.fillter .content .part input::placeholder{
+    color: white;
+    font-family: expofont;
 }
 .fillter select{
     font-size: 14px;
