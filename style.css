@@ -752,6 +752,8 @@ select option {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  justify-content: center;
+    align-items: center;
 }
 .cars .cardNew {
   padding: 8px 8px 14px;
