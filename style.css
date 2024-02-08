@@ -514,6 +514,7 @@ body{
 .contactUs {
   margin-top: 124px;
   direction: rtl;
+  max-width: 96%;
 }
 .contactUs h1 {
   font-size: 24px;
@@ -534,6 +535,7 @@ body{
   flex-direction: column;
   gap: 26px;
   margin-bottom: 26px;
+  padding: 0px 12px;
 }
 .contactUs form label {
   font-size: 16px;
