@@ -5,6 +5,10 @@ body {
   background-color: rgba(239, 233, 221, 1);
   scroll-behavior: smooth;
 }
+body{
+  max-width: 430px;
+  margin: auto;
+}
 @font-face {
   font-family: BebasKai;
   src: url("./BebasKai.ttf");
@@ -745,14 +749,111 @@ select option {
 /*cars*/
 .cars {
   direction: rtl;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 .cars .cardNew {
+  padding: 8px 8px 14px;
+  background-color: white;
+  border-radius: 22px;
 }
 .cars .cardNew .carInfo {
+  position: relative;
+}
+.cars .cardNew .carInfo .imgCar {
+  width: 100%;
+  border-radius: 18px;
+  display: block;
+  margin: auto;
+}
+.cars .cardNew .carInfo .svgNum{
+  position: absolute;
+  bottom: 22px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  max-width: 90%;
+  height: 68px;
+  border-radius: 4px;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cars .cardNew .carInfo .featuresCar{
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: flex-end;
+  justify-content: flex-end;
+  position: absolute;
+  top: 14px;
+  left: 0;
+}
+.cars .cardNew .carInfo .featuresCar p{
+  font-size: 12px;
+  padding: 4px 12px;
+margin: 0;
+text-align: center;
+color: rgba(25, 37, 64, 1);
+font-family: expofontBold;
+
+}
+.cars .cardNew .carInfo .featuresCar .pNew{
+  background: rgba(235, 175, 41, 1);
+}
+.cars .cardNew .carInfo .featuresCar .goodPrice{
+  background: rgba(66, 255, 0, 1);
+
+}
+.cars .cardNew .carInfo .featuresCar .three{
+  background: rgba(255, 154, 154, 1);
+
 }
 .cars .cardNew .carDetails {
+  padding: 0px 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+margin: 12px 0px 16px;
+position: relative;
+}
+.cars .cardNew .carDetails .part{}
+.cars .cardNew .carDetails .part p {
+  margin: 0;
+  font-family: expofont;
+  line-height: 28px;
+  word-spacing: 8px;
+}
+.cars .cardNew .carDetails .part .boldSpan{
+  font-family: expofontBold;
+
+}
+.cars .cardNew .carDetails .part .numCar {
+  font-family: Montserrat;
+  letter-spacing: 3px;
+  font-weight: 700;
+}
+.cars .cardNew .carDetails .details {
+  flex: 1;
+}
+.cars .cardNew .carDetails .price {
+  flex: 1;
+}
+.cars .cardNew .carDetails .price .currency{
+  font-family: expofontBold;
+  font-size: 20px;
+}
+.cars .cardNew .carDetails .star {
+  position: absolute;
+  left: 20px;
 }
 .cars .cardNew .contactCar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
 }
 .cars .cardNew .contactCar a {
   padding: 6px 10px;
@@ -763,11 +864,13 @@ select option {
   justify-content: center;
   gap: 8px;
   flex: 1;
+  text-decoration: none;
 }
 .cars .cardNew .contactCar a p {
   color: white;
   font-size: 16px;
-  font-family: expofontBold;
+  font-family: expofont;
+  margin: 0;
 }
 .cars .cardNew .contactCar a img {
 }
