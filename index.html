@@ -1,350 +1,346 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="navbar.css">
-    <link rel="stylesheet" href="ad.css">
-    <link rel="stylesheet" href="status.css">
-    <link rel="stylesheet" href="filter.css">
-    <link rel="stylesheet" href="./mediaqueries.css">
-    <link rel="stylesheet" href="footer.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css"
+      integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="ad.css" />
+    <link rel="stylesheet" href="status.css" />
+    <link rel="stylesheet" href="filter.css" />
+    <link rel="stylesheet" href="./mediaqueries.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
     <title>Car Services</title>
-</head>
-<body>
-    <nav class='navbar'>
-            <div class="nav">
-                <img id="logo" src="./images/logo.svg" alt="Nemra">
-                <img id="menu" src="./images/iconamoon_menu-burger-horizontal-fill.svg" alt="menu">
-            </div>
-            <div class="dropdown"></div>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav">
+        <img id="logo" src="./images/logo.svg" alt="Nemra" />
+        <img
+          id="menu"
+          src="./images/iconamoon_menu-burger-horizontal-fill.svg"
+          alt="menu"
+        />
+      </div>
+      <div class="dropdown"></div>
     </nav>
-    <div id="ad">
-        <img id='ad-img' src="./images/dubai-number-plate-auction 2.png" alt="dubai-number-plate">
-        <h4 id="ad-title">بيع واشتري لوحات دبي</h4>
-        <p id="ad-description">بخطوات بسيطة وتحويل فوري اونلاين</p>
-        <div id="subdiv">
-            <p>عندك رقم دبي</p>
-            <h4>نشتري جميع ارقام لوحات دبي</h4>
-            <a id='contact-now' href="https://example.com">تواصل معنا الآن</a>
+
+    <div class="sliderImgs">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="">
+              <img
+              id="ad-img"
+              src="./images/dubai-number-plate-auction 2.png"
+              alt="dubai-number-plate"
+            />
+            </a>
+          </div>
+          <div class="swiper-slide">
+             <a href="">
+              <img
+              id="ad-img"
+              src="./images/dubai-number-plate-auction 2.png"
+              alt="dubai-number-plate"
+            />
+             </a>
+          </div>
+          <div class="swiper-slide">
+             <a href="">
+              <img
+              id="ad-img"
+              src="./images/dubai-number-plate-auction 2.png"
+              alt="dubai-number-plate"
+            />
+             </a>
+          </div>
+          <div class="swiper-slide">
+             <a href="">
+              <img
+              id="ad-img"
+              src="./images/dubai-number-plate-auction 2.png"
+              alt="dubai-number-plate"
+            />
+             </a>
+          </div>
+          <div class="swiper-slide">
+             <a href="">
+              <img
+              id="ad-img"
+              src="./images/dubai-number-plate-auction 2.png"
+              alt="dubai-number-plate"
+            />
+             </a>
+          </div>
+          
         </div>
+        <div class="swiper-pagination"></div>
+      </div>
     </div>
+
     <div id="numbers">
-        <a id='bike-numbers' href="https://example.com">أرقام دراجات</a>
-        <a id="car-numbers" href="https://example.com">أرقام سيارات</a>
+      <a id="bike-numbers" href="https://example.com">أرقام دراجات</a>
+      <a id="car-numbers" href="https://example.com">أرقام سيارات</a>
+    </div>
+    <div class="fillter">
+      <div class="content">
+        <div class="part1">
+          <img src="./images/fillter.png" class="imgFillter" alt="Fillter" />
+          <h4>فلتر</h4>
+        </div>
+        <div class="parts">
+          <div class="part">
+            <div class="form-group">
+              <select class="form-control">
+                <option selected>جميع الإمارات</option>
+                <option>دبي</option>
+                <option>ابوظبي</option>
+                <option>دبي</option>
+                <option>ابوظبي</option>
+              </select>
+            </div>
+          </div>
+          <div class="part">
+            <div class="form-group">
+              <select class="form-control">
+                <option selected>جميع الفئات</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="part">
+            <div class="form-group">
+              <select class="form-control">
+                <option selected>الرقم</option>
+                <option>1522</option>
+                <option>275</option>
+                <option>1522</option>
+                <option>275</option>
+              </select>
+            </div>
+          </div>
+          <div class="part">
+            <div class="form-group">
+              <input type="text" placeholder="يتضمن: مثال:900 " value="810" />
+            </div>
+          </div>
+
+          <div class="part">
+            <div class="form-group">
+              <input type="text" placeholder="أعلى سعر" />
+            </div>
+          </div>
+          <div class="part">
+            <div class="form-group">
+              <input type="text" placeholder="اقل سعر" />
+            </div>
+          </div>
+        </div>
+
+        <div class="btnSearch">
+          <input type="submit" value="بحث" />
+        </div>
+      </div>
     </div>
     <div class="container">
-        <div class="card">
-            <div class="car">
-                <div class="car-number new exclusive-price">
-                    <img src="./images/1.png" alt="first_car">
-                    <div class="number-plate">
-                        <img src="./images/number-plate.svg" alt="number_plate">
-                        <p class="code">H</p>
-                        <p class="num">73774</p>
-                    </div>
-                </div>
-                <div class="car-details">
-                    <div class="details">
-                        <p>فئة : خصوصي</p>
-                        <p><span class="code">H</span> : كود</p>
-                        <p>رقم : <span class="num">73774</span></p>
-                    </div>
-                    <div class="price">
-                        <p>السعر</p>
-                        <p class="currency">10.900</p>
-                        <p>درهم</p>
-                    </div>
-                    <div class="star">
-                        <img src="./images/star.png" alt="star" width="40" height="40">
-                    </div>
-                    <div class="contact">
-                        <a class='chat-with-us' href="https://wa.me/+201025474376">راسلنا واتساب</a>
-                        <a class="call-us" href="https://wa.me/+201025474376">اتصل بنا</a>
-                    </div>
-                </div>
+      <div class="cars">
+        <div class="cardNew">
+          <div class="carInfo">
+            <img src="./images/1.png" alt="first_car" class="imgCar" />
+            <div class="svgNum">
+              <iframe src="https://laravel.numra.ae/plate-image/cars/19/10111/abu_dhuabi" style="width: 100%;height: 88px;" frameborder="0"></iframe>
             </div>
-        </div>
-        <div class="card">
-            <div class="car">
-                <div class="car-number new exclusive-price">
-                    <img src="./images/1.png" alt="first_car">
-                    <div class="number-plate">
-                        <img src="./images/number-plate.svg" alt="number_plate">
-                        <p class="code">H</p>
-                        <p class="num">73774</p>
-                    </div>
-                </div>
-                <div class="car-details">
-                    <div class="details">
-                        <p>فئة : خصوصي</p>
-                        <p><span class="code">H</span> : كود</p>
-                        <p>رقم : <span class="num">73774</span></p>
-                    </div>
-                    <div class="price">
-                        <p>السعر</p>
-                        <p class="currency">10.900</p>
-                        <p>درهم</p>
-                    </div>
-                    <div class="star">
-                        <img src="./images/star.png" alt="star" width="40" height="40">
-                    </div>
-                    <div class="contact">
-                        <a class='chat-with-us' href="https://wa.me/+201025474376">راسلنا واتساب</a>
-                        <a class="call-us" href="https://wa.me/+201025474376">اتصل بنا</a>
-                    </div>
-                </div>
+            <div class="featuresCar">
+              <p class="pNew">جديد</p>
+              <p class="goodPrice">سعر مميز</p>
+              <p class="three">ثلاثي</p>
             </div>
-        </div>
-        <div class="card">
-            <div class="car">
-                <div class="car-number new exclusive-price">
-                    <img src="./images/1-2.png" alt="first_car">
-                    <div class="number-plate">
-                        <img src="./images/number-plate.svg" alt="number_plate">
-                        <p class="code">H</p>
-                        <p class="num">73774</p>
-                    </div>
-                </div>
-                <div class="car-details">
-                    <div class="details">
-                        <p>فئة : خصوصي</p>
-                        <p><span class="code">H</span> : كود</p>
-                        <p>رقم : <span class="num">73774</span></p>
-                    </div>
-                    <div class="price">
-                        <p>السعر</p>
-                        <p class="currency">10.900</p>
-                        <p>درهم</p>
-                    </div>
-                    <div class="star">
-                        <img src="./images/star.png" alt="star" width="40" height="40">
-                    </div>
-                    <div class="contact">
-                        <a class='chat-with-us' href="https://wa.me/+201025474376">راسلنا واتساب</a>
-                        <a class="call-us" href="https://wa.me/+201025474376">اتصل بنا</a>
-                    </div>
-                </div>
+          </div>
+          <div class="carDetails">
+            <div class="details part">
+              <p>فئة : خصوصي</p>
+              <p>كود : <span class="boldSpan">H</span> </p>
+              <p>رقم : <span class="boldSpan numCar">73774</span></p>
             </div>
-        </div>
-        <div class="card">
-            <div class="car">
-                <div class="car-number new exclusive-price">
-                    <img src="./images/1-3.png" alt="first_car">
-                    <div class="number-plate">
-                        <img src="./images/number-plate.svg" alt="number_plate">
-                        <p class="code">H</p>
-                        <p class="num">73774</p>
-                    </div>
-                </div>
-                <div class="car-details">
-                    <div class="details">
-                        <p>فئة : خصوصي</p>
-                        <p><span class="code">H</span> : كود</p>
-                        <p>رقم : <span class="num">73774</span></p>
-                    </div>
-                    <div class="price">
-                        <p>السعر</p>
-                        <p class="currency">10.900</p>
-                        <p>درهم</p>
-                    </div>
-                    <div class="star">
-                        <img src="./images/star.png" alt="star" width="40" height="40">
-                    </div>
-                    <div class="contact">
-                        <a class='chat-with-us' href="https://wa.me/+201025474376">راسلنا واتساب</a>
-                        <a class="call-us" href="https://wa.me/+201025474376">اتصل بنا</a>
-                    </div>
-                </div>
+            <div class="price part">
+              <p>السعر</p>
+              <p class="currency ">10.900</p>
+              <p>درهم</p>
             </div>
-        </div>
-        <div class="card">
-            <div class="car">
-                <div class="car-number new exclusive-price">
-                    <img src="./images/1-4.png" alt="first_car">
-                    <div class="number-plate">
-                        <img src="./images/number-plate.svg" alt="number_plate">
-                        <p class="code">H</p>
-                        <p class="num">73774</p>
-                    </div>
-                </div>
-                <div class="car-details">
-                    <div class="details">
-                        <p>فئة : خصوصي</p>
-                        <p><span class="code">H</span> : كود</p>
-                        <p>رقم : <span class="num">73774</span></p>
-                    </div>
-                    <div class="price">
-                        <p>السعر</p>
-                        <p class="currency">10.900</p>
-                        <p>درهم</p>
-                    </div>
-                    <div class="star">
-                        <img src="./images/star.png" alt="star" width="40" height="40">
-                    </div>
-                    <div class="contact">
-                        <a class='chat-with-us' href="https://wa.me/+201025474376">راسلنا واتساب</a>
-                        <a class="call-us" href="https://wa.me/+201025474376">اتصل بنا</a>
-                    </div>
-                </div>
+            <div class="star">
+              <img src="./images/star.png" alt="star" width="40" height="40" />
             </div>
+          </div>
+          <div class="contactCar">
+            <a href="https://wa.me/+201025474376">
+              <p>اتصل بنا</p>
+              <img src="./images/whatsapp.png" alt="whatsapp" />
+            </a>
+            <a href="https://wa.me/+201025474376">
+              <p>راسلنا واتساب</p>
+              <img src="./images/tel.png" alt="tel" />
+            </a>
+          </div>
         </div>
-        <div class="card">
-            <div class="car">
-                <div class="car-number new exclusive-price">
-                    <img src="./images/1-5.png" alt="first_car">
-                    <div class="number-plate">
-                        <img src="./images/number-plate.svg" alt="number_plate">
-                        <p class="code">H</p>
-                        <p class="num">73774</p>
-                    </div>
-                </div>
-                <div class="car-details">
-                    <div class="details">
-                        <p>فئة : خصوصي</p>
-                        <p><span class="code">H</span> : كود</p>
-                        <p>رقم : <span class="num">73774</span></p>
-                    </div>
-                    <div class="price">
-                        <p>السعر</p>
-                        <p class="currency">10.900</p>
-                        <p>درهم</p>
-                    </div>
-                    <div class="star">
-                        <img src="./images/star.png" alt="star" width="40" height="40">
-                    </div>
-                    <div class="contact">
-                        <a class='chat-with-us' href="https://wa.me/+201025474376">راسلنا واتساب</a>
-                        <a class="call-us" href="https://wa.me/+201025474376">اتصل بنا</a>
-                    </div>
-                </div>
+        <div class="cardNew">
+          <div class="carInfo">
+            <img src="./images/1.png" alt="first_car" class="imgCar" />
+            <div class="svgNum">
+              <iframe src="https://laravel.numra.ae/plate-image/cars/19/10111/abu_dhuabi" style="width: 100%;height: 88px;" frameborder="0"></iframe>
             </div>
-        </div>
-        <div class="card">
-            <div class="car">
-                <div class="car-number new exclusive-price">
-                    <img src="./images/1-6.png" alt="first_car">
-                    <div class="number-plate">
-                        <img src="./images/number-plate.svg" alt="number_plate">
-                        <p class="code">H</p>
-                        <p class="num">73774</p>
-                    </div>
-                </div>
-                <div class="car-details">
-                    <div class="details">
-                        <p>فئة : خصوصي</p>
-                        <p><span class="code">H</span> : كود</p>
-                        <p>رقم : <span class="num">73774</span></p>
-                    </div>
-                    <div class="price">
-                        <p>السعر</p>
-                        <p class="currency">10.900</p>
-                        <p>درهم</p>
-                    </div>
-                    <div class="star">
-                        <img src="./images/star.png" alt="star" width="40" height="40">
-                    </div>
-                    <div class="contact">
-                        <a class='chat-with-us' href="https://wa.me/+201025474376">راسلنا واتساب</a>
-                        <a class="call-us" href="https://wa.me/+201025474376">اتصل بنا</a>
-                    </div>
-                </div>
+            <div class="featuresCar">
+              <p class="pNew">جديد</p>
+              <p class="goodPrice">سعر مميز</p>
+              <p class="three">ثلاثي</p>
             </div>
-        </div>
-        <div class="card">
-            <div class="car">
-                <div class="car-number new exclusive-price">
-                    <img src="./images/1-8.png" alt="first_car">
-                    <div class="number-plate">
-                        <img src="./images/number-plate.svg" alt="number_plate">
-                        <p class="code">H</p>
-                        <p class="num">73774</p>
-                    </div>
-                </div>
-                <div class="car-details">
-                    <div class="details">
-                        <p>فئة : خصوصي</p>
-                        <p><span class="code">H</span> : كود</p>
-                        <p>رقم : <span class="num">73774</span></p>
-                    </div>
-                    <div class="price">
-                        <p>السعر</p>
-                        <p class="currency">10.900</p>
-                        <p>درهم</p>
-                    </div>
-                    <div class="star">
-                        <img src="./images/star.png" alt="star" width="40" height="40">
-                    </div>
-                    <div class="contact">
-                        <a class='chat-with-us' href="https://wa.me/+201025474376">راسلنا واتساب</a>
-                        <a class="call-us" href="https://wa.me/+201025474376">اتصل بنا</a>
-                    </div>
-                </div>
+          </div>
+          <div class="carDetails">
+            <div class="details part">
+              <p>فئة : خصوصي</p>
+              <p>كود : <span class="boldSpan">H</span> </p>
+              <p>رقم : <span class="boldSpan numCar">73774</span></p>
             </div>
+            <div class="price part">
+              <p>السعر</p>
+              <p class="currency ">10.900</p>
+              <p>درهم</p>
+            </div>
+            <div class="star">
+              <img src="./images/star.png" alt="star" width="40" height="40" />
+            </div>
+          </div>
+          <div class="contactCar">
+            <a href="https://wa.me/+201025474376">
+              <p>اتصل بنا</p>
+              <img src="./images/whatsapp.png" alt="whatsapp" />
+            </a>
+            <a href="https://wa.me/+201025474376">
+              <p>راسلنا واتساب</p>
+              <img src="./images/tel.png" alt="tel" />
+            </a>
+          </div>
         </div>
+      </div>
+
+   
     </div>
-        <div class="add_carnum">
-            <img class="car-image" src="./images/click_here.png" alt="click_here">
-            <div class="content">
-                <p class="headline">اعرض رقم سيارتك للبيع على</p>
-                <img class="logo" src="./images/logo.svg" alt="logo">
-                <p class="description">خطوات سهلة وبسيطة ومجانية بالكامل</p>
-                <a class="add" href="https://example.com">اضغط هنا واعرض رقمك الحين</a>
-            </div>
+    <div class="nextContent">
+      <button href="" class="next">
+        <p>السابق</p>
+        <img src="./images/next.png" alt="next" />
+      </button>
+      <button href="" class="prev">
+        <p>التالي</p>
+        <img src="./images/next.png" alt="next" />
+      </button>
+    </div>
+    <div class="add_carnum">
+      <img class="car-image" src="./images/click_here.png" alt="click_here" />
+      <div class="content">
+        <p class="headline">اعرض رقم سيارتك للبيع على</p>
+        <img class="logo" src="./images/logo.svg" alt="logo" />
+        <p class="description">خطوات سهلة وبسيطة ومجانية بالكامل</p>
+        <a class="add" href="https://example.com">اضغط هنا واعرض رقمك الحين</a>
+      </div>
+    </div>
+    <div id="questions">
+      <img
+        class="question-img"
+        src="./images/Questions (1) 1.svg"
+        width="238"
+        height="238"
+        alt="questions"
+      />
+      <p class="title">ليش تختار نمرة ؟</p>
+      <p class="description">نتميز بخطوات بسيطة وسهلة لبيع وشراء اللوحات</p>
+    </div>
+    <div id="features">
+      <div class="feature">
+        <p class="feature-title">خطوات سهلة وبسيطة</p>
+        <p class="feature-description">بيع او اشتري لوحات دبي بسهولة</p>
+      </div>
+      <div class="feature">
+        <p class="feature-title">RTA مرخصين من</p>
+        <p class="feature-description">
+          مرخصين من هيئة الطرق والمواصلات واقتصادية دبي
+        </p>
+      </div>
+      <div class="feature">
+        <p class="feature-title">خدمة عملاء 24/7</p>
+        <p class="feature-description">دعم العملاء متوفر على مدار الساعة</p>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-container">
+        <div class="contact-details">
+          <img src="./images/logo.svg" alt="numera-logo" />
+          <p id="address">Dubai, UAE</p>
+          <p>Call us: +971 50 774 4336</p>
+          <p>Email: info@numra.ae</p>
+          <div class="social-links">
+            <a href="https://facebook.com"></a>
+            <a href="https://instagram.com"></a>
+            <a href="https://tiktok.com"></a>
+          </div>
         </div>
-        <div id="questions">
-            <img class="question-img" src="./images/Questions (1) 1.svg" width="238" height="238" alt="questions">
-            <p class="title">ليش تختار نمرة ؟</p>
-            <p class="description">نتميز بخطوات بسيطة وسهلة لبيع وشراء اللوحات</p>
+        <div class="quick-links">
+          <h4>Quick Links</h4>
+          <a href="">Home</a>
+          <a href="">Shop</a>
+          <a href="">Contact</a>
+          <a href="">Privacy Policy</a>
+          <a href="">Terms of Use</a>
         </div>
-        <div id="features">
-            <div class="feature">
-                <p class="feature-title">خطوات سهلة وبسيطة</p>
-                <p class="feature-description">بيع او اشتري لوحات دبي بسهولة</p>
-            </div>
-            <div class="feature">
-                <p class="feature-title">RTA مرخصين من</p>
-                <p class="feature-description">مرخصين من هيئة الطرق والمواصلات واقتصادية دبي</p>
-            </div>
-            <div class="feature">
-                <p class="feature-title">خدمة عملاء 24/7</p>
-                <p class="feature-description">دعم العملاء متوفر على مدار الساعة</p>
-            </div>
+      </div>
+      <hr />
+      <div class="copy_rights">
+        <div class="copy-right">
+          <p>2023 Future Car Care</p>
+          <p>All rights reserved</p>
         </div>
-        <footer>
-            <div class="footer-container">
-                <div class="contact-details">
-                    <img src="./images/logo.svg" alt="numera-logo">
-                    <p id="address">Dubai, UAE</p>
-                    <p>Call us: +971 50 774 4336</p>
-                    <p>Email: info@numra.ae</p>
-                    <div class="social-links">
-                        <a href="https://facebook.com"></a>
-                        <a href="https://instagram.com"></a>
-                        <a href="https://tiktok.com"></a>
-                    </div>
-                </div>
-                <div class="quick-links">
-                    <h4>Quick Links</h4>
-                    <a href="">Home</a>
-                    <a href="">Shop</a>
-                    <a href="">Contact</a>
-                    <a href="">Privacy Policy</a>
-                    <a href="">Terms of Use</a>
-                </div>
-            </div>
-            <hr>
-            <div class="copy_rights">
-                <div class="copy-right">
-                    <p>2023 Future Car Care</p>
-                    <p>All rights reserved</p>
-                </div>
-                <div class="developed_by">
-                    <p>developed by :</p>
-                    <img src="./images/10_trend.svg" alt="developed by 10Trend">
-                </div>
-            </div>
-        </footer>
-</body>
+        <div class="developed_by">
+          <p>developed by :</p>
+          <img src="./images/10_trend.svg" alt="developed by 10Trend" />
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/jquery-3.6.1.min.js"></script>
+
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+  </body>
 </html>

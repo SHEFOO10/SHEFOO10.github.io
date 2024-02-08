@@ -13,6 +13,8 @@ footer
     font-weight: 200;
     font-size: 12px;
     font-style: normal;
+    max-width: 100%;
+    direction: rtl;
 }
 
 footer .footer-container
@@ -25,7 +27,7 @@ footer .footer-container
 
 footer .footer-container .social-links
 {
-    margin-top: 10px;
+    margin-top: 18px;
     display: flex;
     justify-content: space-between
 }

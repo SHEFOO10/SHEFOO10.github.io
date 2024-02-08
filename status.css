@@ -9,7 +9,7 @@
     text-align: center;
     left: 7.5px;
     top: 60px;
-    padding: 8px 12px;
+    padding: 4px 10px;
     width: max-content;
 }
 .free-transfer-fees::after
@@ -23,7 +23,7 @@
     text-align: center;
     left: 7.5px;
     top: 80px;
-    padding: 6px;
+    padding: 4px;
     width: max-content;
 }
 .new::before
@@ -36,7 +36,7 @@
     text-align: center;
     left: 7.5px;
     top: 28px;
-    padding-block: 6px;
+    padding-block: 4px;
     width: 60px;
     content: 'جديد';
 }
