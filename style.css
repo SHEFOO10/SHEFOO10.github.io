@@ -223,6 +223,7 @@ body{
   position: relative;
   width: max-content;
   margin: auto;
+  max-width: 100%;
 }
 .add_carnum .car-image {
   width: 98%;
@@ -236,7 +237,9 @@ body{
   box-sizing: border-box;
   text-align: center;
   bottom: 30px;
-  left: 7.5%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 384px;
 }
 .add_carnum p {
   margin-block: 10px;
@@ -360,6 +363,16 @@ body{
   width: 49px;
   height: 49px;
   content: url("./images/call-center.svg");
+}
+@media (max-width:440px){
+  .add_carnum .add {
+    font-size: 16px;
+}
+.add_carnum .headline, #questions > .title {
+  
+  font-size: 20px;
+ 
+}
 }
 /*fillter*/
 .fillter {
@@ -757,6 +770,18 @@ max-width: 182px;
 }
 .sliderImgs .swiper-pagination {
     top: 90%;
+}
+.sliderImgs img{
+  width: 100%;
+  height: auto;
+}
+@media (max-width:440px){
+  .sliderImgs{
+    width: 100%;
+  }
+  .sliderImgs .swiper-horizontal{
+    width: 100%;
+  }
 }
 /*cars*/
 .cars {
