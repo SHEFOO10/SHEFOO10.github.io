@@ -1,3 +1,6 @@
+*{
+  box-sizing: border-box;
+}
 html,
 body {
   margin: 0;
@@ -705,9 +708,9 @@ select option {
   justify-content: center;
   gap: 20px;
   max-width: 380px;
-  margin: 0px auto 24px;
+  margin: 20px auto 24px;
 }
-.nextContent a {
+.nextContent button {
   flex: 1;
   background: rgba(235, 175, 41, 1);
   display: flex;
@@ -717,14 +720,16 @@ select option {
   padding: 8px 10px;
   border-radius: 6px;
   text-decoration: none;
+border: none;
+max-width: 182px;
 }
-.nextContent a p {
+.nextContent button p {
   color: rgba(25, 37, 64, 1);
   font-size: 16px;
   font-family: expofontBold;
   margin: 0;
 }
-.nextContent a p img {
+.nextContent button p img {
 }
 .nextContent .next {
   flex-direction: row-reverse;
@@ -733,6 +738,11 @@ select option {
 }
 .nextContent .prev img {
   transform: rotate(180deg);
+}
+@media (max-width:500px){
+  .nextContent {
+    padding: 0px 20px;
+  }
 }
 /*sliderImgs*/
 .sliderImgs {
