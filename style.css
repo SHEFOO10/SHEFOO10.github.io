@@ -58,7 +58,9 @@ body {
     left: 50%;
     transform: translateX(-50%);
 }
-
+.card .car-details p{
+    font-weight: 400;
+}
 .card .car-details .details
 {
     width: 40%;
@@ -99,6 +101,8 @@ body {
 
 .card .car-details .star img
 {
+    width: 36px;
+    height: 36px;
     position: relative;
     top:-22px;
 }
@@ -220,6 +224,14 @@ body {
     left: 35%;
     font-size: 40px;
     letter-spacing: 5px;
+    font-weight: 500 !important;
+}
+.car .imgCar{
+    display: block;
+    margin: auto;
+}
+.car {
+    margin-bottom: 10px;
 }
 .car-number {
     position: relative;
@@ -227,6 +239,7 @@ body {
 .add_carnum {
     position: relative;
     width: max-content;
+    margin: auto;
 }
 .add_carnum .car-image
 {
@@ -241,7 +254,7 @@ body {
     position: absolute;
     box-sizing: border-box;
     text-align: center;
-    bottom: 12.5%;
+    bottom:30px;
     left: 7.5%;
 }
 .add_carnum p {
@@ -265,14 +278,14 @@ body {
     font-family: expofont;
     color: #EBAF29;
     font-size: 14px;
-    margin-bottom: 30px;
+    margin-bottom: 18px;
 }
 
 .add_carnum .add {
     width: 380px;
     height: 60px;
     box-sizing: border-box;
-    padding: 15px 20px 15px 90px;
+    padding: 18px 20px 15px 90px;
     border-radius: 4px;
     font-family: expofont;
     font-weight: 700;
@@ -294,7 +307,7 @@ body {
 
 #questions {
     width: 100%;
-    margin-top: 10px;
+    margin-top: 14px;
 }
 
 #questions > *
@@ -317,7 +330,7 @@ body {
 
 #features
 {
-    margin-block: 40px;
+    margin: 20px 0px 46px;
 }
 
 #features .feature p {
@@ -330,7 +343,7 @@ body {
     width: 90%;
     padding: 10px 100px 10px 0px;
     margin-inline: auto;
-    margin-block: 10px;
+    margin-block: 8px;
     border-radius: 10px;
     background-color: #192540;
 }
@@ -750,5 +763,7 @@ margin: 0;
   .nextContent .prev img{
     transform: rotate(180deg);
   }
-
-  
+/*cars*/
+  .cars{}
+  .cars .cardNew{}
+  .cars .cardNew{}
