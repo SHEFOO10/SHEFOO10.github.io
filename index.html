@@ -14,6 +14,10 @@
       integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="navbar.css" />
     <link rel="stylesheet" href="ad.css" />
@@ -25,7 +29,6 @@
     <title>Car Services</title>
   </head>
   <body>
- 
     <nav class="navbar">
       <div class="nav">
         <img id="logo" src="./images/logo.svg" alt="Nemra" />
@@ -37,20 +40,57 @@
       </div>
       <div class="dropdown"></div>
     </nav>
-    <div id="ad">
-      <img
-        id="ad-img"
-        src="./images/dubai-number-plate-auction 2.png"
-        alt="dubai-number-plate"
-      />
-      <h4 id="ad-title">بيع واشتري لوحات دبي</h4>
-      <p id="ad-description">بخطوات بسيطة وتحويل فوري اونلاين</p>
-      <div id="subdiv">
-        <p>عندك رقم دبي</p>
-        <h4>نشتري جميع ارقام لوحات دبي</h4>
-        <a id="contact-now" href="https://example.com">تواصل معنا الآن</a>
+
+    <div class="sliderImgs">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="">
+              <img
+              id="ad-img"
+              src="./images/dubai-number-plate-auction 2.png"
+              alt="dubai-number-plate"
+            />
+            </a>
+          </div>
+          <div class="swiper-slide">
+             <a href="">
+              <img
+              id="ad-img"
+              src="./images/dubai-number-plate-auction 2.png"
+              alt="dubai-number-plate"
+            />
+          </div>
+          <div class="swiper-slide">
+             <a href="">
+              <img
+              id="ad-img"
+              src="./images/dubai-number-plate-auction 2.png"
+              alt="dubai-number-plate"
+            />
+          </div>
+          <div class="swiper-slide">
+             <a href="">
+              <img
+              id="ad-img"
+              src="./images/dubai-number-plate-auction 2.png"
+              alt="dubai-number-plate"
+            />
+          </div>
+          <div class="swiper-slide">
+             <a href="">
+              <img
+              id="ad-img"
+              src="./images/dubai-number-plate-auction 2.png"
+              alt="dubai-number-plate"
+            />
+          </div>
+          
+        </div>
+        <div class="swiper-pagination"></div>
       </div>
     </div>
+
     <div id="numbers">
       <a id="bike-numbers" href="https://example.com">أرقام دراجات</a>
       <a id="car-numbers" href="https://example.com">أرقام سيارات</a>
@@ -65,7 +105,7 @@
           <div class="part">
             <div class="form-group">
               <select class="form-control">
-                <option selected>جميع الإمارات </option>
+                <option selected>جميع الإمارات</option>
                 <option>دبي</option>
                 <option>ابوظبي</option>
                 <option>دبي</option>
@@ -76,7 +116,7 @@
           <div class="part">
             <div class="form-group">
               <select class="form-control">
-                <option selected> جميع الفئات </option>
+                <option selected>جميع الفئات</option>
                 <option>1</option>
                 <option>2</option>
                 <option>3</option>
@@ -84,7 +124,7 @@
               </select>
             </div>
           </div>
-         
+
           <div class="part">
             <div class="form-group">
               <select class="form-control">
@@ -101,8 +141,7 @@
               <input type="text" placeholder="يتضمن: مثال:900 " value="810" />
             </div>
           </div>
-        
-      
+
           <div class="part">
             <div class="form-group">
               <input type="text" placeholder="أعلى سعر" />
@@ -114,9 +153,9 @@
             </div>
           </div>
         </div>
-   
+
         <div class="btnSearch">
-          <input type="submit" value="بحث">
+          <input type="submit" value="بحث" />
         </div>
       </div>
     </div>
@@ -133,22 +172,33 @@
             </div>
           </div>
           <div class="carDetails">
-
+            <div class="details">
+              <p>فئة : خصوصي</p>
+              <p><span class="boldSpan">H</span> : كود</p>
+              <p>رقم : <span class="boldSpan">73774</span></p>
+            </div>
+            <div class="price">
+              <p>السعر</p>
+              <p class="currency">10.900</p>
+              <p>درهم</p>
+            </div>
+            <div class="star">
+              <img src="./images/star.png" alt="star" width="40" height="40" />
+            </div>
           </div>
           <div class="contactCar">
-            <a  href="https://wa.me/+201025474376">
+            <a href="https://wa.me/+201025474376">
+              <p>اتصل بنا</p>
+              <img src="./images/whatsapp.png" alt="whatsapp" />
+            </a>
+            <a href="https://wa.me/+201025474376">
               <p>راسلنا واتساب</p>
-              <img src='./images/tel.png' alt="tel">
-              </a
-          >
-          <a  href="https://wa.me/+201025474376">
-            <p>اتصل بنا</p>
-            <img src='./images/whatsapp.png' alt="whatsapp">
-          </a>
+              <img src="./images/tel.png" alt="tel" />
+            </a>
           </div>
         </div>
       </div>
-     
+
       <div class="card">
         <div class="car">
           <div class="car-number new exclusive-price">
@@ -162,8 +212,8 @@
           <div class="car-details">
             <div class="details">
               <p>فئة : خصوصي</p>
-              <p><span class="code">H</span> : كود</p>
-              <p>رقم : <span class="num">73774</span></p>
+              <p><span class="boldSpan">H</span> : كود</p>
+              <p>رقم : <span class="boldSpan">73774</span></p>
             </div>
             <div class="price">
               <p>السعر</p>
@@ -499,5 +549,17 @@
 
     <script src="./js/popper.min.js"></script>
     <script src="./js/bootstrap.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
   </body>
 </html>
